@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "dev": "bun index.ts"
+  },
+  "dependencies": { "discord.js": "latest" },
+  "name": "discord",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
