@@ -1,6 +1,5 @@
 import Discord from "discord.js"
 
-
 // —————————————————————————————————————————————————————————————————————————————
 // Environment
 
@@ -16,8 +15,7 @@ const client = new Discord.Client({
 // Bot
 
 client.on("ready", () => {
-   const channel_id = client.channels.cache.get(target_channel)!
-   const channel = channel_id as Discord.TextChannel
+   const channel = client.channels.cache.get(target_channel)! as Discord.TextChannel
    channel.send("Hello World!")
 })
 
